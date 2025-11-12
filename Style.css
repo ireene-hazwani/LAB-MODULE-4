@@ -1,0 +1,75 @@
+/* External CSS - style.css */
+
+/* Navigation link styling */
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #98bf21;
+}
+nav a:hover {
+  background-color: #7A991A;
+}
+
+/* Headings */
+h1 { text-decoration: overline; }
+h2 { text-decoration: underline; color: #4CAF50; }
+h3 { text-decoration: line-through; color: #0077cc; }
+
+/* Video */
+video {
+  display: block;
+  margin: 10px auto;
+  border: 3px solid #4CAF50;
+  border-radius: 8px;
+}
+
+/* Form styling */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+  border: 1px solid #ccc;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 6px;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Link states */
+a:link { color:#FF0000; }       /* unvisited */
+a:visited { color: #00AA00; }   /* visited */
+a:hover { color: #FF00FF; }     /* hover */
+a:active { color:#0000FF; }     /* active */
+
+/* Responsive design */
+@media (max-width: 600px) {
+  nav ul li {
+    float: none;
+    text-align: center;
+  }
+  form, video {
+    width: 90%;
+  }
+}
